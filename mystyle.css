@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     color: black;
+    font-family: "Poppins", sans-serif;
 }
 /* Properties you can use on flex-container
 - justify-content (ALWAYS on the main-axis)
@@ -50,8 +51,8 @@ To make all the items the same size:
 .item {
     width: 100px;
     height: 100px;
-    background-color: rgb(81, 136, 136);
     margin: 5px;
+    background-color: olivedrab;
     align-items: center;
     /* to center text */
     display: flex;
@@ -70,7 +71,7 @@ To make all the items the same size:
     padding: 10px;
     align-items: center;
     justify-content: space-between;
-    background-color: aqua;
+    background-color: rgb(139, 211, 211);
 }
 .header-container {
     margin-top: 20px;
@@ -83,15 +84,50 @@ To make all the items the same size:
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .navbar-container img {
     max-width: 70px;
+    margin-left: 40px;
 }
 a {
     /* removes the default styling */
     text-decoration: none;
     padding: 10px;
 }
-h1 {
+h1, h2 {
     margin-bottom: 20px;
+}
+.navbarlogo {
+    display: flex;
+    align-items: center;
+}
+.navspan {
+    align-items: center;
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+.flex-container img {
+    width: 100px;
+    height: 100px;
+    min-width: 100%;
+}
+.flex-container2 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    min-height: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.flexitem:nth-of-type(2) {
+    flex-grow: 2;  
+}
+.flexitem {
+    margin: 10px;
+    background-color: blueviolet;
+    min-width: 150px;
 }
