@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+/* Properties you can use on flex-container
+- justify-content (ALWAYS on the main-axis)
+- flex-direction
+- flex-wrap
+- flex-flow
+- align-items (ALWAYS on the cross axis)
+- align-content
+*/
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+/* Properties you can use on items in flex-container
+- order
+- flex-grow
+- flex-shrink
+- flex-basis
+- align-self
+
+To change order of items:
+
+.item:nth-of-type(1) {
+    order: 2;
+}   
+
+To set the initial length of flex-items:
+The flex-basis property specifies the initial length of a flexible item.
+
+To set different sizes using flex-grow:
+
+.item:nth-of-type(1) {
+  flex-grow:1;
+}
+.item:nth-of-type(2) {
+  flex-grow:2;
+}
+
+To make all the items the same size: 
+.item {
+  flex-grow:1;
+}
+*/
+
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(81, 136, 136);
+    margin: 5px;
+    align-items: center;
+    /* to center text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* or... */
+    text-align: center;
+}
+.flex-container2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbar-container {
+    display: flex;
+    margin-top: 20px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua;
+}
+.header-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+     align-items: center;
+}
+.flex-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.navbar-container img {
+    max-width: 70px;
+}
+a {
+    /* removes the default styling */
+    text-decoration: none;
+    padding: 10px;
+}
+h1 {
+    margin-bottom: 20px;
+}
